@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo
+  description: A simple Spring Boot application
+spec:
+  type: service
+  lifecycle: production
+  owner: user:guest
+  dependsOn: []
