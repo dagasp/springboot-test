@@ -1,6 +1,6 @@
 site_name: 'Example Documentation'
 repo_url: https://github.com/dagasp/springboot-test
-edit_uri: https://github.com/dagasp/docs/index.md
+edit_uri: https://github.com/dagasp/springboot-test/blob/master/docs/index.md
 
 nav:
   - Home: index.md
