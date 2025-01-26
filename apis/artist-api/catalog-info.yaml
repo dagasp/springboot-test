@@ -1,0 +1,41 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: artist-api
+  description: Retrieve artist details
+spec:
+  type: openapi
+  lifecycle: production
+  owner: user:dagasp10
+  system: artist-engagement-portal
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Artist API
+      description: API for retrieving details about artists
+      license:
+        name: MIT
+    servers:
+      - url: http://artist.spotify.net/v1
+    paths:
+      /artists:
+        get:
+          summary: List all artists
+          description: Retrieves a list of artists.
+          responses:
+            '200':
+              description: A list of artists
+              content:
+                application/json:
+                  schema:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          description: Artist ID
+                        name:
+                          type: string
+                          description: Artist name
