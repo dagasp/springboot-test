@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: dagasp10
+spec:
+  profile:
+    displayName: "Davide Patti"
