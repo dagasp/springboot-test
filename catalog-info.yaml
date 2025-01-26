@@ -6,7 +6,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: dagasp10
+  owner: user:dagasp10
   dependsOn: []
   providesApis:
     - artist-api
