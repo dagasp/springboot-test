@@ -8,3 +8,7 @@ spec:
   lifecycle: production
   owner: user:dagasp10
   dependsOn: []
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
