@@ -7,3 +7,15 @@ nav:
 
 plugins:
   - techdocs-core
+
+# Optional: Define the theme for TechDocs
+theme:
+  name: 'material'
+
+# Optional: Define extra options for the build process
+extra:
+  techdocs:
+    # This section can include any custom configurations needed
+    # to integrate with the Backstage TechDocs plugin
+    search:
+      enabled: true  # Enable search for the documentation if needed
