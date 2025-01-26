@@ -10,3 +10,23 @@ spec:
   dependsOn: []
   providesApis:
     - artist-api
+  docs:
+    - description: |
+        This is a simple Spring Boot application that exposes an API for managing artists.
+        The API provides endpoints to retrieve and manage artist details. This project uses Spring Boot with
+        an embedded H2 database for storage.
+        
+        ### Endpoints
+        - **GET /artists**: List all artists.
+        - **POST /artists**: Add a new artist.
+
+        ### Technologies Used
+        - **Spring Boot**: Java framework for building web applications.
+        - **H2 Database**: In-memory database for simple storage.
+        
+        ### Setup Instructions
+        1. Clone the repository.
+        2. Run `mvn spring-boot:run` to start the application.
+        3. Access the application at `http://localhost:8080`.
+        
+        For more detailed documentation, see the [full API documentation](link_to_full_docs).
