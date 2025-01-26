@@ -9,6 +9,4 @@ spec:
   owner: user:dagasp10
   dependsOn: []
   providesApis:
-    - petstore
-    - internal/streetlights
-    - hello-world
+    - artist-api
