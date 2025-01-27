@@ -6,7 +6,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: user:dagasp10
+  owner: group:dev-team
   system: acn-dev-portal
   definition: |
     openapi: "3.0.0"
