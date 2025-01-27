@@ -4,6 +4,7 @@ metadata:
   name: dev-team
   description: Development team responsible for Backstage Portal
 spec:
+  owner: user:dagasp10
   type: team
   profile:
     displayName: Development Team
