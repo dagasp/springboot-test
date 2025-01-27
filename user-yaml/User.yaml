@@ -8,5 +8,4 @@ spec:
     displayName: Davide Patti
     email: dagasp10@example.com
     #picture: https://example.com/profile/dagasp10.jpg
-  memberOf:
-    - dev-team
+  memberOf: [dev-group]

@@ -8,5 +8,4 @@ spec:
   profile:
     displayName: Development Team
     email: ctp.dev@accenture.com
-  members:
-    - dagasp10
+  members: [dagasp10]
