@@ -1,0 +1,31 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: notify-template
+  title: Notify Template
+  description: Template di esempio che invia notifiche
+  tags:
+    - notifications
+    - example
+spec:
+  owner: backstage-team
+  type: service
+  steps:
+    - id: create
+      name: Crea risorsa
+      action: debug:log
+      input:
+        message: "Esecuzione del template iniziata..."
+    - id: notify
+      name: Notifica
+      action: notification:send
+      input:
+        recipients: users
+        userRefs:
+          - user:default/admin
+        title: "Template completato"
+        info: "Il template è stato eseguito con successo."
+        severity: "info"
+        link: https://backstage.io
+  output:
+    result: "Notifica inviata correttamente"
