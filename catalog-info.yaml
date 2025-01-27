@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: demo
+  name: springboot-test
   description: A simple Spring Boot application
   annotations:
     backstage.io/techdocs-ref: dir.
@@ -13,9 +13,3 @@ spec:
   dependsOn: []
   providesApis:
     - artist-api
-  subcomponentOf: []
-links:
-  - type: catalog
-    url: ./apis/artist-api/catalog-info.yaml
-  - type: catalog
-    url: ./system.yaml
