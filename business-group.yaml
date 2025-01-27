@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: business-team
+  description: Business team responsible for Backstage Portal
+spec:
+  type: team
+  profile:
+    displayName: Business Team
+    email: ctp.dev@accenture.com
+  members: [John Doe]
+  children: [dev-team]
