@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: artist-api
-  description: Retrieve artist details
+  name: auth-api
+  description: User login
 spec:
   type: openapi
   lifecycle: production
@@ -12,30 +12,48 @@ spec:
     openapi: "3.0.0"
     info:
       version: 1.0.0
-      title: Artist API
-      description: API for retrieving details about artists
+      title: Auth API
+      description: API to login an user
       license:
         name: MIT
     servers:
-      - url: http://artist.spotify.net/v1
+      - url: http://auth.example.com/v1
     paths:
-      /artists:
-        get:
-          summary: List all artists
-          description: Retrieves a list of artists.
+      /login:
+        post:
+          summary: Simulate user login
+          description: Accepts user credentials and returns a login token.
+          requestBody:
+            required: true
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    username:
+                      type: string
+                      description: The username of the user
+                    password:
+                      type: string
+                      description: The password of the user
           responses:
             '200':
-              description: A list of artists
+              description: Login successful, returns an authentication token.
               content:
                 application/json:
                   schema:
-                    type: array
-                    items:
-                      type: object
-                      properties:
-                        id:
-                          type: string
-                          description: Artist ID
-                        name:
-                          type: string
-                          description: Artist name
+                    type: object
+                    properties:
+                      token:
+                        type: string
+                        description: Authentication token
+            '401':
+              description: Unauthorized, invalid username or password.
+              content:
+                application/json:
+                  schema:
+                    type: object
+                    properties:
+                      error:
+                        type: string
+                        description: Error message for invalid credentials
