@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: dagasp10
+  description: Backstage Portal Developer
+spec:
+  profile:
+    displayName: Davide Patti
+    email: dagasp10@example.com
+    #picture: https://example.com/profile/dagasp10.jpg
+  memberOf:
+    - dev-team
