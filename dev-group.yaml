@@ -1,13 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: dev-team
-  description: Development team responsible for Backstage Portal
+  name: infrastructure
+  description: The infra business unit
 spec:
-  owner: user:dagasp10
-  type: team
+  type: business-unit
   profile:
-    displayName: Development Team
-    email: ctp.dev@accenture.com
+    displayName: Infrastructure
+    email: infrastructure@example.com
+    picture: https://example.com/groups/bu-infrastructure.jpeg
   members: [dagasp10]
-  children: []
