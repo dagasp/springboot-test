@@ -9,4 +9,5 @@ spec:
     displayName: Infrastructure
     email: infrastructure@example.com
     picture: https://example.com/groups/bu-infrastructure.jpeg
+  children: []
   members: [dagasp10]
