@@ -8,7 +8,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: [user:dagasp10, group:dev-team]
+  owner: group:dev-team
   system: acn-dev-portal
   dependsOn: []
   providesApis: [auth-api]
