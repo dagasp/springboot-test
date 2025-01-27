@@ -8,7 +8,7 @@ metadata:
     - notifications
     - example
 spec:
-  owner: backstage-team
+  owner: user:dagasp10
   type: service
   steps:
     - id: create
@@ -22,7 +22,7 @@ spec:
       input:
         recipients: users
         userRefs:
-          - user:default/admin
+          - user:dagasp10
         title: "Template completato"
         info: "Il template è stato eseguito con successo."
         severity: "info"
