@@ -5,7 +5,7 @@ metadata:
   description: Backstage Database
   annotations:
     'backstage.io/kubernetes-namespace': kube-system
-    'backstage.io/kubernetes-id': postgres
+    'backstage.io/kubernetes-id': etcd-minikube
 spec:
   type: database
   lifecycle: production
