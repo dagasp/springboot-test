@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: mini-kube
+  name: minikube
   annotations:
-    backstage.io/kubernetes-id: 'mini-kube'
+    backstage.io/kubernetes-id: 'minikube'
 spec:
   type: kubernetes-cluster
   lifecycle: production
