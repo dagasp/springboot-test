@@ -5,6 +5,7 @@ metadata:
   description: Backstage Database
   annotations:
     'backstage.io/kubernetes-namespace': kube-system
+    'backstage.io/kubernetes-id': postgres
 spec:
   type: database
   lifecycle: production
