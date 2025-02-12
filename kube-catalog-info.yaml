@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: example
-  description: example.com
+  name: redis-deployment-kube
+  description: Redis Deployment for Kubernetes
   annotations:
     backstage.io/kubernetes-id: backstage
 spec:
   type: website
-  lifecycle: production
-  owner: user:guest
+  lifecycle: poc
+  owner: group:dev-team
