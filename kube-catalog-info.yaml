@@ -1,9 +1,10 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
   name: my-cluster
   annotations:
-    kubernetes.io/api-server: 'https://127.0.0.1:53725'
+    backstage.io/kubernetes-cluster: 'my-cluster'
 spec:
   type: kubernetes-cluster
+  lifecycle: production
   owner: user:guest
