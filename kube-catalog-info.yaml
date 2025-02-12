@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: kubernetes-dashboard-74cffc9dcd-bxsd8
+  name: kube-system
   annotations:
     backstage.io/kubernetes-id: 'kubernetes-dashboard-74cffc9dcd-bxsd8'
 spec:
