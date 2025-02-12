@@ -1,12 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: postgres-backstage
-  description: PostgreSQL Database for Backstage
+  name: example
+  description: example.com
   annotations:
-    'backstage.io/kubernetes-namespace': backstage
-    'backstage.io/kubernetes-id': postgres
+    backstage.io/kubernetes-id: backstage
 spec:
-  type: database
+  type: website
   lifecycle: production
-  owner: user:default/guest
+  owner: user:guest
