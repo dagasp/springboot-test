@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
-  name: my-cluster
+  name: mini-kube
   annotations:
     kubernetes.io/api-server: 'https://127.0.0.1:32771'
 spec:
