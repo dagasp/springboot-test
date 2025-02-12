@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: etcd-minikube
-  description: Backstage Database
+  name: postgres-backstage
+  description: PostgreSQL Database for Backstage
   annotations:
-    'backstage.io/kubernetes-namespace': kube-system
-    'backstage.io/kubernetes-id': etcd-minikube
+    'backstage.io/kubernetes-namespace': backstage
+    'backstage.io/kubernetes-id': postgres
 spec:
   type: database
   lifecycle: production
