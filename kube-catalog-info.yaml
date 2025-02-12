@@ -1,10 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: kube-system-cluster
+  name: postgres
+  description: Backstage Database
   annotations:
-    backstage.io/kubernetes-id: 'kubernetes'  # Riferimento al servizio che espone il cluster
+    backstage.io/kubernetes-id: postgres
+    backstage.io/kubernetes-namespace: backstage
 spec:
-  type: kubernetes-cluster
+  type: database
   lifecycle: production
-  owner: user:guest
+  owner: user:default/guest
