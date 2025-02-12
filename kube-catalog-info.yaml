@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: order-service
+  description: the order service
+  links:
+    - title: Website
+      url: https://docs.spring.io/spring-cloud-config/docs/current/reference/html/
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    lighthouse.com/website-url: https://docs.spring.io/spring-cloud-config/docs/current/reference/html/
+    'backstage.io/kubernetes-label-selector': 'app=order-service'
+    'backstage.io/kubernetes-namespace': 'spring-cloud-config-dev,spring-cloud-config-prod'
+    'backstage.io/kubernetes-cluster': dev-cluster
+spec:
+  type: service
+  owner: me@example.com
+  lifecycle: POC
