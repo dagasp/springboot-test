@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: minikube
   annotations:
-    backstage.io/kubernetes-id: 'minikube'
+    backstage.io/kubernetes-id: 'kubernetes-dashboard-74cffc9dcd-bxsd8'
 spec:
   type: kubernetes-cluster
   lifecycle: production
