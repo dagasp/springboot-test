@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: my-cluster
   annotations:
-    backstage.io/kubernetes-cluster: 'my-cluster'
+    backstage.io/kubernetes-id: 'my-cluster'
 spec:
   type: kubernetes-cluster
   lifecycle: production
