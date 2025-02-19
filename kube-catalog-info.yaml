@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: redis-deployment-kube
-  description: Redis Deployment for Kubernetes
+  name: "kubernetes-cluster-monitor"
+  description: "Monitoring Kubernetes Cluster in Backstage"
   annotations:
-    backstage.io/kubernetes-id: backstage
+    backstage.io/kubernetes-id: "backstage-demo-backstage-app"
 spec:
-  type: website
-  lifecycle: poc
-  owner: group:dev-team
+  type: service
+  owner: "platform-team"
+  lifecycle: production
