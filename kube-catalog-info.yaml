@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: cluster-monitor
-  description: Cluster monitoring
+  description: Cluster monitoring Kubernetes
   annotations:
     backstage.io/kubernetes-id: backstage-demo-backstage-app
 spec:
