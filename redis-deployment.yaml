@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: redis-deployment-kube
+  name: random-name
   description: Redis Deployment for Kubernetes
   annotations:
     backstage.io/kubernetes-id: backstage
