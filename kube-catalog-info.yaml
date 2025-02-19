@@ -4,7 +4,7 @@ metadata:
   name: cluster-monitor
   description: Cluster monitoring Kubernetes
   annotations:
-    backstage.io/kubernetes-id: backstage-demo-backstage-app
+    backstage.io/kubernetes-id: backstage-demo
 spec:
   type: website
   lifecycle: poc
