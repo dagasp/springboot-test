@@ -5,6 +5,7 @@ metadata:
   description: Cluster monitoring Kubernetes
   annotations:
     backstage.io/kubernetes-id: backstage-demo
+    backstage.io/kubernetes-namespace: backstage
 spec:
   type: website
   lifecycle: poc
