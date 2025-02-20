@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: backstage-demo
     backstage.io/kubernetes-namespace: backstage
-    backstage.io/kubernetes-label-selector: 'app=backstage-demo,pod-template-hash=6dcc99f558'
+    backstage.io/kubernetes-label-selector: 'app=backstage-demo'
 spec:
   type: website
   lifecycle: poc
