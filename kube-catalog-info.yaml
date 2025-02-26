@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: backstage-demo
     backstage.io/kubernetes-namespace: backstage
-    backstage.io/kubernetes-label-selector: 'app=backstage-demo'
+    backstage.io/kubernetes-label-selector: 'app=backstage-demo, app=springboot-login'
 spec:
   type: website
   lifecycle: poc
