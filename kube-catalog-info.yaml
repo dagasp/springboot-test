@@ -4,9 +4,14 @@ metadata:
   name: cluster-monitor
   description: Cluster monitoring Kubernetes
   annotations:
-    backstage.io/kubernetes-id: backstage-demo
-    backstage.io/kubernetes-namespace: backstage
-    backstage.io/kubernetes-label-selector: 'app in (backstage-demo)'
+    #backstage.io/kubernetes-id: backstage-demo
+    #backstage.io/kubernetes-namespace: backstage
+    #backstage.io/kubernetes-label-selector: 'app in (backstage-demo)'
+    kubernetes.io/api-server: 'poc-bs-pay-aks-dns-kqyntwme.hcp.italynorth.azmk8s.io'
+    #kubernetes.io/api-server-certificate-authority: # base64-encoded CA
+    kubernetes.io/auth-provider: 'oidc'
+    kubernetes.io/oidc-token-provider: 'microsoft'
+    kubernetes.io/skip-metrics-lookup: 'true'
 spec:
   type: website
   lifecycle: poc
